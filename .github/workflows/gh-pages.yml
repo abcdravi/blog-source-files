@@ -30,3 +30,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          external_repository: abcdravi/abcdravi.github.io
+          #   keep_files: true
+          user_name: abcdravi
+          user_email: abcdravi@gmail.com
+          publish_branch: main
