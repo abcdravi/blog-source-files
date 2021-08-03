@@ -1,0 +1,55 @@
+baseURL = "https://abcdravi.github.io"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 5
+theme = "hugo-theme-texify"
+title = "pRavite"
+
+disqusShortname = ""
+googleAnalytics = ""
+pygmentsUseClasses = true
+
+[author]
+name = "Ravi"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "post"
+  name = "Post"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/post/"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[params]
+  customCSS = []
+  dateFormat = "2006-01-02"
+  description = "My personal blog"
+  enableFullRSS = true
+  enableHanEmph = true
+  enableMathjax = true
+  favicon = "/favicon.ico"
+  footnote = "Follow me on <a class=link href=https://github.com/abcdravi>GitHub</a>, <a class=link href=https://twitter.com/abcdravi>Twitter</a> or <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
+  keywords = ["hugo", "latex", "theme"]
+
+# see https://utteranc.es for installation guide
+[params.utterances]
+  enable = false
+  repo = ""
+  issue_term = "pathname"
+  label = "Comment"
+  theme = "github-light"
